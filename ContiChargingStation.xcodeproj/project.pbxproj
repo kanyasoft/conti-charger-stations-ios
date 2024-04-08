@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C682F8A2BC4A43300127911 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C682F892BC4A43300127911 /* GoogleService-Info.plist */; };
 		5CAC99AA2BA891EF002A63D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC99A92BA891EF002A63D8 /* AppDelegate.swift */; };
 		5CAC99AC2BA891EF002A63D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC99AB2BA891EF002A63D8 /* SceneDelegate.swift */; };
 		5CAC99AE2BA891EF002A63D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC99AD2BA891EF002A63D8 /* ViewController.swift */; };
@@ -16,6 +17,10 @@
 		5CAC99C12BA89200002A63D8 /* ContiChargingStationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC99C02BA89200002A63D8 /* ContiChargingStationTests.swift */; };
 		5CAC99CB2BA89200002A63D8 /* ContiChargingStationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC99CA2BA89200002A63D8 /* ContiChargingStationUITests.swift */; };
 		5CAC99CD2BA89200002A63D8 /* ContiChargingStationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC99CC2BA89200002A63D8 /* ContiChargingStationUITestsLaunchTests.swift */; };
+		5CE7F0582BC498EC00C62957 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE7F0572BC498EC00C62957 /* FirebaseInAppMessaging-Beta */; };
+		5CE7F05A2BC498EC00C62957 /* FirebaseInAppMessagingSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE7F0592BC498EC00C62957 /* FirebaseInAppMessagingSwift-Beta */; };
+		5CE7F05C2BC498EC00C62957 /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE7F05B2BC498EC00C62957 /* FirebaseInstallations */; };
+		5CE7F05E2BC498EC00C62957 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE7F05D2BC498EC00C62957 /* FirebaseMessaging */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C682F892BC4A43300127911 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5CAC99A62BA891EF002A63D8 /* ContiChargingStation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContiChargingStation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CAC99A92BA891EF002A63D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CAC99AB2BA891EF002A63D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +62,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CE7F05E2BC498EC00C62957 /* FirebaseMessaging in Frameworks */,
+				5CE7F05C2BC498EC00C62957 /* FirebaseInstallations in Frameworks */,
+				5CE7F05A2BC498EC00C62957 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
+				5CE7F0582BC498EC00C62957 /* FirebaseInAppMessaging-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +109,7 @@
 		5CAC99A82BA891EF002A63D8 /* ContiChargingStation */ = {
 			isa = PBXGroup;
 			children = (
+				5C682F892BC4A43300127911 /* GoogleService-Info.plist */,
 				5CAC99A92BA891EF002A63D8 /* AppDelegate.swift */,
 				5CAC99AB2BA891EF002A63D8 /* SceneDelegate.swift */,
 				5CAC99AD2BA891EF002A63D8 /* ViewController.swift */,
@@ -143,6 +154,12 @@
 			dependencies = (
 			);
 			name = ContiChargingStation;
+			packageProductDependencies = (
+				5CE7F0572BC498EC00C62957 /* FirebaseInAppMessaging-Beta */,
+				5CE7F0592BC498EC00C62957 /* FirebaseInAppMessagingSwift-Beta */,
+				5CE7F05B2BC498EC00C62957 /* FirebaseInstallations */,
+				5CE7F05D2BC498EC00C62957 /* FirebaseMessaging */,
+			);
 			productName = ContiChargingStation;
 			productReference = 5CAC99A62BA891EF002A63D8 /* ContiChargingStation.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +232,9 @@
 				Base,
 			);
 			mainGroup = 5CAC999D2BA891EF002A63D8;
+			packageReferences = (
+				5CE7F0562BC498EB00C62957 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 5CAC99A72BA891EF002A63D8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CAC99B32BA891FE002A63D8 /* Assets.xcassets in Resources */,
+				5C682F8A2BC4A43300127911 /* GoogleService-Info.plist in Resources */,
 				5CAC99B62BA891FE002A63D8 /* Base in Resources */,
 				5CAC99B12BA891EF002A63D8 /* Base in Resources */,
 			);
@@ -603,6 +624,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5CE7F0562BC498EB00C62957 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.23.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5CE7F0572BC498EC00C62957 /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CE7F0562BC498EB00C62957 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		5CE7F0592BC498EC00C62957 /* FirebaseInAppMessagingSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CE7F0562BC498EB00C62957 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessagingSwift-Beta";
+		};
+		5CE7F05B2BC498EC00C62957 /* FirebaseInstallations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CE7F0562BC498EB00C62957 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseInstallations;
+		};
+		5CE7F05D2BC498EC00C62957 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CE7F0562BC498EB00C62957 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5CAC999E2BA891EF002A63D8 /* Project object */;
 }

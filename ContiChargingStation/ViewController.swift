@@ -7,6 +7,7 @@
 
 import UIKit
 import WebKit
+import FirebaseCore
 class ViewController: UIViewController, WKNavigationDelegate {
     //@IBOutlet weak var webView: WKWebView!
     let webView = WKWebView()
@@ -22,6 +23,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
             return}
         webView.load(URLRequest(url: url))
         
+        FirebaseApp.configure()
         // Do any additional setup after loading the view.
     }
     override func viewDidLayoutSubviews() {
